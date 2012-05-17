@@ -17,7 +17,7 @@
                     <h3>Add a question</h3>
                 </div>
                 <form method="post" action="/mc/?id={{ quizzes.quiz_id|escape }}">{% csrf_token %}
-                    {% include 'quizzes/add_quest.html' %}
+                    {% include 'quizzes/add_quest_include.html' %}
                 </form>
                 </div>
                 <span style="margin-left: 5px"><a class="btn btn-success btn-small" href="#myModalAdd" data-toggle="modal"><strong>Add question</strong></a>
