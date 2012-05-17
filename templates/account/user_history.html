@@ -1,0 +1,18 @@
+{% extends "main/base.html" %}
+{% block title %}History |history.html {% endblock %}
+{% block content %}
+    <div class="span10">
+        <p style="font-size: 20px"><strong>{{ user }}</strong></p><br>
+        {% for his in history %}
+            <table class="table table-striped">
+                <tbody>
+                <tr><td>
+                    <p><strong>{{ his.time }}</strong></p>
+                    <a style="font-size: 15px" href="/quizzes/?id={{ his.quiz.quiz_id }}">{{ his.quiz.title }}</a>
+                    <p>{{ his.score }}/{{ his.quiz.mc.count }}</p>
+                </td></tr>
+                </tbody>
+            </table>
+        {% endfor %}
+    </div>
+{% endblock %}
