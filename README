@@ -7,3 +7,5 @@ Member:
     Ho Sy Viet Anh
     Nguyen Van Chinh
 More about the project: It is the project in subject Software Engineering in University of Engineering and Technology, the result will cost 40% in the total grade point. The project lasts from week 2 to week 15 of second semester of year 2012.
+
+This project uses django-avatar as a module. Also you need PIL (Python Imaging Library) to run it.
